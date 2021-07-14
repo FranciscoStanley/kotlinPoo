@@ -5,6 +5,7 @@ class Pessoa {
     var identidade:String = "1.123.123"
     var cpf:String = "123.123.123-11"
         private set
+
     var nTelefone:String = "(61)91234-1234"
     var profissao:String = "Software Developer"
 
