@@ -1,3 +1,5 @@
+package one.digitalinovattion
+
 class Pessoa {
 
     var nome:String = "Francisco Stanley"
@@ -9,7 +11,7 @@ class Pessoa {
     var profissao:String = "Software Developer"
 
 
-
+    //Criando um inner class para retorna endereço
     inner class endereco {
 
         var rua:String = "Rua programando em Kotlin"
@@ -18,11 +20,22 @@ class Pessoa {
 
     }
 
+    //Criando um construtor e função para retorna nome e cpf
+    constructor()
+
+    fun pessoaInfo() = "Nome: $nome | CPF: $cpf"
+
+
+
 }
 
 fun main(){
 
+    //Intanciando objeto pessoa
+
     val franciscoStanley = Pessoa()
+
+//Imprimindo as informações da classe pessoa
 
     println("Nome: ${franciscoStanley.nome}.")
     println("Idade: ${franciscoStanley.idade} Anos.")
@@ -35,5 +48,8 @@ fun main(){
             "bairro ${franciscoStanley.endereco().bairro}.")
 
     println("Profissão: ${franciscoStanley.profissao}.")
+
+    //Imprimindo o construtor da função pessoaInfo
+    println(franciscoStanley.pessoaInfo())
 
 }
