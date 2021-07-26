@@ -1,6 +1,7 @@
 package one.digitalinovattion
 
-enum class ClienteTipo(descricao: String) {
+enum class ClienteTipo(val descricao: String) {
+
     PF("Pessoa Fisica"),
     PJ("Pessoa Juridica");
 
